@@ -1,9 +1,0 @@
-D:\Plugin\dosTool\dosTool\bin\Debug\dosTool.exe.config
-D:\Plugin\dosTool\dosTool\bin\Debug\dosTool.exe
-D:\Plugin\dosTool\dosTool\bin\Debug\dosTool.pdb
-D:\Plugin\dosTool\dosTool\obj\Debug\dosTool.csprojAssemblyReference.cache
-D:\Plugin\dosTool\dosTool\obj\Debug\dosTool.Properties.Resources.resources
-D:\Plugin\dosTool\dosTool\obj\Debug\dosTool.csproj.GenerateResource.cache
-D:\Plugin\dosTool\dosTool\obj\Debug\dosTool.csproj.CoreCompileInputs.cache
-D:\Plugin\dosTool\dosTool\obj\Debug\dosTool.exe
-D:\Plugin\dosTool\dosTool\obj\Debug\dosTool.pdb
