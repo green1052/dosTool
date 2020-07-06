@@ -191,16 +191,16 @@ namespace dosTool
         private void button4_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-                "DosTool은 Dos 공격을 쉽게 할 수 있게 도와주는 프로그램입니다.\nDosTool을 사용해서 발생하는 모든 문제는 제작자의 책임이 아닙니다.\n\nDosTool의 제작자는 green1052이며\n각종 건의와 버그신고는 제작자의 깃허브에서 해주십시오\ngithub.com/green1052 (예 버튼을 클릭시 깃허브로 이동합니다.)",
+                "DosTool은 Dos 공격을 쉽게 할 수 있게 도와주는 프로그램입니다.\nDosTool을 사용해서 발생하는 모든 문제는 제작자의 책임이 아닙니다.\n\nDosTool의 제작자는 green1052이며\n각종 건의와 버그신고는 제작자의 깃허브에서 해주세요\ngithub.com/green1052 (예 버튼을 클릭시 깃허브로 이동합니다.)",
                 "DosTool", MessageBoxButtons.YesNo);
 
             if (result == DialogResult.Yes)
-                Process.Start("https://github.com/green1052");
+                Process.Start("https://github.com/green1052/dosTool");
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/green1052");
+            Process.Start("https://github.com/green1052/dosTool");
         }
     }
 }
