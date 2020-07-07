@@ -37,14 +37,14 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // checkBox1
             // 
-            this.checkBox1.Location = new System.Drawing.Point(12, 126);
+            this.checkBox1.Location = new System.Drawing.Point(12, 64);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(51, 29);
             this.checkBox1.TabIndex = 2;
@@ -54,7 +54,7 @@
             // 
             // checkBox2
             // 
-            this.checkBox2.Location = new System.Drawing.Point(69, 126);
+            this.checkBox2.Location = new System.Drawing.Point(69, 64);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(51, 29);
             this.checkBox2.TabIndex = 3;
@@ -64,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 161);
+            this.button1.Location = new System.Drawing.Point(11, 94);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(85, 55);
@@ -75,7 +75,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(103, 161);
+            this.button2.Location = new System.Drawing.Point(103, 94);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(89, 55);
             this.button2.TabIndex = 5;
@@ -85,16 +85,16 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 222);
+            this.richTextBox1.Location = new System.Drawing.Point(11, 155);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(406, 225);
+            this.richTextBox1.Size = new System.Drawing.Size(406, 343);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(198, 161);
+            this.button3.Location = new System.Drawing.Point(198, 94);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(85, 55);
             this.button3.TabIndex = 7;
@@ -108,19 +108,11 @@
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(406, 51);
             this.richTextBox2.TabIndex = 8;
-            this.richTextBox2.Text = "주소";
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Location = new System.Drawing.Point(11, 69);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(406, 51);
-            this.richTextBox3.TabIndex = 9;
-            this.richTextBox3.Text = "포트";
+            this.richTextBox2.Text = "주소:포트";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(289, 161);
+            this.button4.Location = new System.Drawing.Point(289, 94);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(85, 55);
             this.button4.TabIndex = 10;
@@ -130,21 +122,31 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(11, 450);
+            this.label1.Location = new System.Drawing.Point(12, 509);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 14);
             this.label1.TabIndex = 11;
             this.label1.Text = "제작자: green1052";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // checkBox3
+            // 
+            this.checkBox3.Location = new System.Drawing.Point(126, 69);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(62, 19);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.Text = "스텔스";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 468);
+            this.ClientSize = new System.Drawing.Size(428, 532);
+            this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox1);
@@ -155,6 +157,7 @@
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "DosTool";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
         }
 
@@ -164,10 +167,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
 
         #endregion
     }
